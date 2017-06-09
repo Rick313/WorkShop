@@ -1,0 +1,123 @@
+.card-container{
+    margin: auto;
+    display: flex;
+    width: 700px;
+    height: 450px;
+    font-family: "Open sans", "Roboto", sans-serif;
+    box-shadow: 0 0 20px 8px rgba(0,0,0, .2);
+    overflow: hidden;
+}
+
+/*--------------Left--------------*/
+.card-left{
+    flex: 1 1 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-left > h2{
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    color: whitesmoke;    
+}
+
+.card-left > .logo{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.card-left > .logo > img{
+    max-height: auto;
+    width: 100%;
+    filter: none;
+    cursor: pointer;
+}
+
+.card-left > img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100%;
+    filter: sepia(.3);
+    transform: translate(-50%, -50%);
+}
+
+
+/*--------------right--------------*/
+.card-right{
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #222;
+    overflow: hidden;
+}
+.card-right-header{
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+}
+
+.card-right > .card-right-header > form {
+    flex: 2 1 auto;
+    height: 55px;
+    margin: 5px;
+    padding: 5px;
+    overflow: hidden;
+}
+
+.card-right > .card-right-header > form > input[type="text"]:focus{
+    height: 30px;
+}
+
+.card-right > .social{
+    flex: 1 1 auto;
+}
+
+.card-right-content{
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 5px;
+}
+
+.card-right-content > .img-box{
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    height: 250px;
+    margin: 5px;
+    padding: 15px;
+    overflow-y: hidden;
+    z-index: 10;
+}
+
+.card-right-content > .img-box > img{
+    margin: 3px;
+    height: auto;
+    width: 50%;
+    cursor: pointer;
+}
+
+.card-right > .card-article {
+    flex: 1 1 auto;
+    padding: 5px;
+    margin: 5px;
+    max-height: 350px;
+    overflow-x: auto;
+}
+
+.card-right > h3 {
+    padding: 5px 10px;
+}
+
+.card-right > .card-article > p {
+    margin: 5px;
+    font-size: 14px;
+    font-weight: lighter;
+}

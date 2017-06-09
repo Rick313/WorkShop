@@ -1,0 +1,38 @@
+.fa-search{
+    font-weight: lighter;
+    color: gray;
+    cursor: pointer;
+}
+
+.fa-search:hover{
+    color: #E6E0D0;
+}
+
+.fa-heart-o{
+    padding: 5px;
+    cursor: pointer;
+}
+
+.fa-heart-o:hover{
+    color: crimson;
+    font-weight: bold;
+}
+
+.fa-bookmark-o{
+    padding: 5px;
+    cursor: pointer;
+}
+
+.fa-bookmark-o:hover{
+    color: orangered;
+    font-weight: bold;
+}
+
+.fa-reply{
+    padding: 5px;
+    cursor: pointer;
+}
+
+.fa-reply:hover{
+    color: lightblue;
+}

@@ -1,0 +1,20 @@
+input[type="text"]{
+    height: auto;
+    padding: 5px;
+    margin: 10px 5px;
+    font-size: 14px;
+    font-weight: lighter;
+    color: gray;
+    font-family: "Open sans", "Roboto", "sans-serif";
+    border: none;
+    border-bottom: 1px solid gray;
+    background: none;
+    outline: none;
+    transition: border .5s ease-in-out, font-size .3s ease, height .3s ease;
+}
+
+input[type="text"]:focus{
+    border-bottom: 1px solid DArkMagenta;
+     font-size: 16px;
+     color: #E6E0D0;
+}

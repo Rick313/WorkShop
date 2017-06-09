@@ -1,0 +1,35 @@
+/*Font import*/
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+
+/*Normalize*/
+@import url("https://necolas.github.io/normalize.css/7.0.0/normalize.css");
+
+/*Import - component*/
+@import url("Import/card-container.css");
+@import url("Import/form.css");
+@import url("Import/fa-components.css");
+@import url("Import/blockquote.css");
+@import url("Import/scroll-bar.css");
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", "Open sans", "sans-serif";
+    color: #E6E6E6;
+}
+
+body{
+    background-color: #444;
+    padding: 20px;
+}
+
+img{
+  filter: sepia(.6);
+  transition: filter .8s ease;
+}
+
+img:hover{
+  filter: none;
+}
