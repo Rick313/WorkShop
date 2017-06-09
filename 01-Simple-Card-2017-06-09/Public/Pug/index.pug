@@ -1,0 +1,38 @@
+extends Layout/layout.pug
+
+block head
+    link(href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet")
+    link(href="https://necolas.github.io/normalize.css/7.0.0/normalize.css" rel="stylesheet")
+
+block content
+    div.container#app 
+        .card
+            .card-body
+                .icon 
+                    a(href="#" "title"="Like")
+                        span.fa.fa-heart-o
+                    a(href="#" "title"="Ajoute un marque page")
+                        span.fa.fa-bookmark-o
+                    a(href="#" "title"="Share")
+                        span.fa.fa-share-alt
+                img(src="http://www.geekasia.com/wp-content/uploads/fable_3_propagande_04.jpg" alt="fable III")
+                blockquote
+                    cite "Hahaha! Don't worry, you'll get used to him. After a while, he's hardly revolting at all." 
+                    a(href="#") More...
+            .card-footer
+                .thumb
+                    a(href="#" alt="profil Jack" title="Jack")
+                        img(src="https://vignette3.wikia.nocookie.net/fable/images/9/90/Jack_of_Blades_FH.jpg/revision/latest?cb=20120707235822" alt="Jack")
+                article
+                    h3 Be a man, die for Albion !
+                    blockquote
+                        p "The Gods and Demons you fear and worship are as nothing to me!"
+                    .icon
+                        a(href="#" alt="Comments" "title"="Comments")
+                            span 
+                                i.fa.fa-comments-o  
+                                |Comments
+                        a(href="#" alt="Send message" title="Send message")
+                            span
+                                i.fa.fa-paper-plane-o  
+                                |Send

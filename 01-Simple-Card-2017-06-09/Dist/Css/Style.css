@@ -1,0 +1,181 @@
+@import "https://necolas.github.io/normalize.css/7.0.0/normalize.css";
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif; }
+
+body {
+  background-color: LightCoral;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: containt; }
+
+a {
+  text-decoration: none; }
+
+.container {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px; }
+  @media screen and (max-width: 300px) {
+    .container {
+      padding: 0;
+      margin: 0 auto; } }
+
+/*card component*/
+.card {
+  max-width: 250px;
+  min-width: 175px;
+  margin: 15px;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2); }
+  @media screen and (max-width: 300px) {
+    .card {
+      margin: 5px 1px; } }
+  .card ::-webkit-scrollbar {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    width: 6px; }
+  .card ::-webkit-scrollbar-thumb {
+    background-color: Crimson;
+    border-radius: 20px; }
+  .card .card-body {
+    position: relative;
+    height: 200px;
+    overflow: hidden; }
+    .card .card-body:hover > img {
+      filter: none; }
+    .card .card-body:hover > blockquote {
+      max-height: 90%;
+      bottom: 0; }
+    .card .card-body .icon {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      padding: 0 5px;
+      background-color: rgba(255, 255, 255, 0.6);
+      box-shadow: 0 2px 1px 1px rgba(0, 0, 0, 0.1);
+      clear: both;
+      z-index: 1; }
+      .card .card-body .icon a {
+        color: #333; }
+      .card .card-body .icon span {
+        display: inline-block;
+        float: right;
+        padding: 2px 5px;
+        cursor: pointer;
+        transition: color .3s ease; }
+        .card .card-body .icon span.fa-heart-o:hover {
+          color: Crimson; }
+        .card .card-body .icon span.fa-bookmark-o:hover {
+          color: Orange; }
+        .card .card-body .icon span.fa-share-alt:hover {
+          color: DeepSkyBlue; }
+    .card .card-body img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      max-height: auto;
+      width: 100%;
+      filter: grayscale(0.6);
+      transform: translate(-50%, -50%);
+      transition: height .3s, width .3s, filter .5s ease;
+      z-index: -1; }
+    .card .card-body blockquote {
+      position: absolute;
+      bottom: -100%;
+      max-height: 0;
+      padding: 5px;
+      color: #E6E0D0;
+      background-color: rgba(0, 0, 0, 0.5);
+      transition: bottom .5s ease-in-out, height .5s;
+      clear: both; }
+      .card .card-body blockquote cite {
+        max-height: 135px;
+        display: block;
+        overflow-x: auto;
+        margin: 3px; }
+      .card .card-body blockquote a {
+        display: block;
+        float: right;
+        margin: 3px;
+        padding: 5px;
+        font-size: 12px;
+        border-radius: 3px;
+        color: inherit;
+        background-color: Crimson; }
+  .card .card-footer {
+    position: relative;
+    max-height: 150px;
+    border-radius: 0 0 4px 4px;
+    background-color: white; }
+    .card .card-footer .thumb {
+      position: absolute;
+      top: -25px;
+      left: -10px;
+      height: 55px;
+      width: 55px;
+      overflow: hidden;
+      z-index: 10;
+      transition: left .3s ease; }
+      @media screen and (max-width: 300px) {
+        .card .card-footer .thumb {
+          left: -2px; } }
+      .card .card-footer .thumb img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        max-height: auto;
+        width: 100%;
+        padding: 2px;
+        border-radius: 4px;
+        border: 1px solid #AAA;
+        background-color: #E6E0D0;
+        transform: translate(-50%, -50%); }
+    .card .card-footer article {
+      position: relative;
+      max-height: 150px;
+      min-height: 100px; }
+      .card .card-footer article h3 {
+        position: absolute;
+        right: 0;
+        text-align: right;
+        max-width: 75%;
+        max-height: 40px;
+        padding: 5px;
+        font-size: 14px;
+        overflow: hidden; }
+      .card .card-footer article blockquote {
+        position: absolute;
+        top: 30px;
+        max-height: 50px;
+        padding: 5px;
+        border-left: 3px solid Crimson; }
+        .card .card-footer article blockquote p {
+          max-height: 45px;
+          font-size: 14px;
+          padding: 3px 5px;
+          overflow-x: auto; }
+      .card .card-footer article .icon {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding: 5px;
+        clear: both;
+        z-index: 10; }
+        .card .card-footer article .icon span {
+          float: right;
+          padding: 0 5px;
+          font-size: 12px;
+          color: #D6D7D6;
+          font-weight: bolder;
+          cursor: pointer; }
+          .card .card-footer article .icon span:hover, .card .card-footer article .icon span:hover > i {
+            color: Crimson; }
+          .card .card-footer article .icon span i {
+            padding: 0 2px;
+            color: #C9C9C9; }
+
+/*# sourceMappingURL=maps/Style.css.map */
